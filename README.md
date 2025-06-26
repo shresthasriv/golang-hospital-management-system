@@ -5,13 +5,13 @@ here is the link for postman docs: https://www.postman.com/cryosat-explorer-4906
 
 you can run this application either through makefile using the db url i provided in .env.example or you can directly run it using docker without requiring external deps.
 
-#Through Makefile:
+##Through Makefile:
 ```
 make deps
 make run
 ```
 
-#through docker:
+##through docker:
 ```
 docker compose up
 ```
