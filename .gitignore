@@ -1,0 +1,159 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Build output
+/bin/
+/build/
+/dist/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+logs/
+/logs
+/log
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Config files that may contain sensitive data
+config.yaml
+config.json
+config.toml
+settings.yaml
+settings.json
+
+# Certificate files
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Docker
+.dockerignore
+
+# Air (Go live reload tool)
+tmp/
+
+# Testify cache
+.testifycache/
+
+# Coverage reports
+coverage.out
+coverage.html
+*.cover
+
+# Profiling data
+*.prof
+
+# Go module download cache
+/go/pkg/mod/
+
+# JetBrains IDEs
+*.iml
+*.ipr
+*.iws
+
+# Backup files
+*.bak
+*.backup
+
+# Node.js (if using any frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Migration files (if auto-generated)
+migrations/*.sql
+
+# Documentation build output
+/docs/_build/
+/docs/site/
+
+# Test artifacts
+test-results/
+test-reports/
+
+# Application specific
+uploads/
+/uploads
+storage/
+/storage
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Database migration state
+schema_migrations
+
+# Local development files
+local.yaml
+local.json
+dev.yaml
+dev.json 

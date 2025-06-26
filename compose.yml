@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=postgresql://hospital_user:hospital_password@db:5432/hospital_db
+      - JWT_SECRET=your_jwt_secret_key_here_make_it_long_and_secure
+      - GIN_MODE=release
+      - PORT=8080
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:docker-compose
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=hospital_user
+      - POSTGRES_PASSWORD=hospital_password
+      - POSTGRES_DB=hospital_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hospital_user -d hospital_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres_data: 
